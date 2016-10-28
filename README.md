@@ -10,3 +10,5 @@ Android project with base functionalities like user management.
 - #### Google+ - 
     Add the google developer app id     <string name="server_client_id">YOUR KEY</string>
 - #### Digits  - To be developed
+
+-
