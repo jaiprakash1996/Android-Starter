@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -70,7 +70,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@color/blue_grey_900">
 
         <com.google.android.gms.common.SignInButton
@@ -81,12 +81,25 @@
             android:visibility="visible"
             tools:visibility="gone" />
 
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_below="@id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            tools:visibility="gone"/>
         <LinearLayout
             android:id="@+id/sign_out_and_disconnect"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:visibility="gone"
